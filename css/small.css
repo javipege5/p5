@@ -1,0 +1,367 @@
+
+	*{
+  		font-family: Arial;
+  		box-sizing: border-box; /*Con border-box, hacemos que el ancho especificado sea el equivalente al ancho total*/
+	}
+	
+	body{
+		min-width: 319px;
+		margin:auto ;/*¿¿poner auto??*/
+	}
+
+
+	input:focus {
+  		border: 1px solid ;
+	}
+
+	/* LOGO */
+
+	body>header>a>img{
+		display: none;
+	}
+	
+	/* HEADER */
+
+	body>header{
+	   	width: 100%;
+	    left: 0;
+	    top: 0;
+	    position: sticky;
+	}
+	
+	body>header>div{
+		padding: 10px;
+	}
+
+	
+	/* NAVEGADOR */
+	body>header>div>nav>ul{
+		display: flex;
+	    flex-direction: column;
+		list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    max-height: 1.8em;
+	}
+
+	body>header>div>nav>ul>li:nth-of-type(1){
+		display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	}
+
+	body>header>div>nav>ul>li:nth-of-type(1)>label>span{ /*ICONO HAMBURGUESA*/
+		
+		font-size: 1.4em;
+		cursor:pointer;	
+	}
+
+	body>header>div>nav>ul>li>a:nth-of-type(1)>img{ 			/* LOGO VERSION SMALL  */
+	    width: 200px;
+   		margin-left: .5em;
+    	margin-right: .7em;
+	}
+
+	body>header>div>nav>ul>li>a:nth-of-type(2)>span{ 			/* ICONO LOGIN */
+	font-size: 1.6em;
+	/* float: right; */
+	margin-top: .26em;
+	}
+
+	body>header>div>nav>ul>li>a>span:first-of-type{/* ICONOS MENU NAVEGACION */
+	margin-right: .2em;
+	}
+
+	#menuHam{
+		display: none;
+	}
+	#menuHam:checked+nav>ul{
+		 max-height: 12em;
+	}
+	#menuHam:checked+nav>ul>li:nth-of-type(1)>label{
+		transform: rotate(0);
+		
+	}
+	body>header>div>nav>ul>li:nth-of-type(2){ /*INICIO*/
+	 	border-top: 1px solid;
+    	padding-top: 1em;
+    	margin-top: 2.5em;
+	}
+
+	body>header>div>nav>ul>li:nth-of-type(3){ /*REGISTRARSE*/
+		padding-top: .5em;
+	}
+	body>header>div>nav>ul>li:nth-of-type(3):hover{ /*REGISTRARSE*/
+		border-radius: 15px;
+	}
+
+	body>header>div>nav>ul>li:nth-of-type(4){ /*BUSQUEDA*/
+	 	border-bottom: 1px solid;
+    	padding-top: .5em;
+    	padding-bottom: 1em;
+	}
+
+	body>header>div>nav>ul>li>a{
+	cursor:pointer;
+    font-weight: bold;
+    text-decoration: none;
+	}
+
+	/* FORMULARIO INICIO SESION */
+
+	body>header>div>form{ /* formulario de la version grande*/
+		display: none;
+	}
+
+	#formSmall{
+	text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 2.8;
+	}
+
+	#formSmall>input[type="submit"]{
+	font-size: 18px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+	}
+	#formSmall>input[type="text"],#formSmall>input[type="password"]{
+	width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+       padding: 2px;
+	}
+	
+
+
+	/* VENTANA MODAL POPUP */
+	#popup {
+   		display: none;
+	}
+	#popup:target {
+	   position: fixed;
+	   display: block;
+	   top:0;
+	   left:0;
+	   right:0;
+	   bottom:0;
+	   margin:0;
+	   z-index: 999;
+	   transition:all 1s;
+	}
+	.popup-contenedor {
+	position: relative;
+    margin: 7% auto;
+    padding: 30px 50px;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+	}
+	a.popup-cerrar {
+	   position: absolute;
+	   top:3px;
+	   right:3px;
+	   padding:7px 10px;
+	   font-size: 20px;
+	   text-decoration: none;
+	   line-height: 1;
+	}
+
+	/* TITULOS PAGINAS */
+
+	body>section>h2{
+		border-bottom: 1px solid;
+    	padding-bottom: .3em;
+    	/* padding-left: .55em; */
+    	margin: .4em;
+    	text-align: center;
+	}
+
+	/* FONDO DE WEB */
+	.fondoG{
+
+	border-radius: 1px;
+    font-size: 18px;
+    border-top: 1px solid;
+    /*background-image: url(../img/fondo.jpg);*/
+  
+	}
+
+
+	/* LISTA FOTOS */
+
+	body>section>div{
+		display:flex;
+		flex-direction: row; /* pone los elementos en forma de fila*/
+		flex-wrap: wrap; /* permite que los elementos flex sean colocados en varias lineas */
+		justify-content: space-evenly;
+	}
+
+	
+	body>section>div>article{
+		min-width: 350px;
+		max-width: 500px;
+		margin:.5em;
+		flex-grow: .5; /* valor de crecimiento del elemento cuando tiene espacio */ 
+		flex: 0 0 30%;
+	}
+
+
+	
+
+	body>section>div>article>div>header>a{
+		text-decoration: none;
+	}
+	body>section>div>article>div>header>a>h3{
+		margin: 0;
+		padding-top: .3em;
+    	padding-left: .4em;
+
+	}
+
+	body>section>div>article>div>p{
+		flex-grow: 1;
+
+	}
+	
+	div.imgArticulo{
+	width: 100%;
+    height: 245px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../img/foto1.jpg");
+
+	}
+
+	body>section>div>article>footer>h4{
+
+		text-overflow: ellipsis;
+		overflow:hidden;
+		white-space: nowrap;
+		display: inline-block;
+		width: 190px;
+		margin: 0;
+		padding-left: .5em;
+		padding-top: .3em;
+	}
+
+	body>section>div>article>footer>h6{
+		margin: 0;
+		padding: 0;
+		padding-left: 1em;
+		padding-bottom:  .4em;
+	}
+
+	/* FOOTER WEB */
+	
+	body>footer{
+
+	overflow: hidden;
+	padding:.5em;
+ 	width: 100%;
+    bottom: 0;
+    font-size: 80%;
+    text-align: center;
+    
+}
+	body>footer>p{
+	margin:0;
+	display: inline-block;
+	padding: 0 10px;
+}
+	body>footer>a{
+	text-decoration: none;
+	margin:0;
+	display: inline-block;
+	padding: 0 10px;
+	border-left: 1px solid;
+}
+
+
+	/* FORMULARIO REGISTRO USUARIO */  /* FORMULARIO BÚSQUEDA */
+
+	body>section>article>form#registroUsuario,body>section>article>form#formBusqueda{
+		margin: 20px;
+		text-align: center;
+	}
+	
+	
+	body>section>article>form#registroUsuario>label>input,body>section>article>form#formBusqueda>label>input{
+	margin: 4px;
+    margin-bottom: 14px;
+	}
+
+	input[type="submit"]{
+		cursor: pointer;
+	}
+
+	/* solicitar album formulario*/
+
+	body>section>article>article>form{
+			text-align: center;
+		}
+	
+	body>section>article>article>form{
+	 		margin: .4em 0;
+ 			width: 42%;
+  			float: left;
+  			box-sizing: border-box;
+	}
+
+/*DETALLE DE FOTO*/
+
+	body>section>article>article>div>h3 {
+    border-bottom: 1px solid #234;
+    padding-bottom: .3em;
+    /* padding-left: .55em; */
+    margin: .4em;
+    text-align: center;   
+     color: black;
+
+}
+
+    body>section>article>article>div>img{
+    border: 4px solid #000000;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 560px;
+    height: 360px;
+    }
+
+
+
+	/*Respuesta solicitar*/
+
+body>section>article>article{
+	text-align: center;
+  
+}
+body>section>article>article>div{
+		-webkit-border-radius: 35px 35px 35px 35px; 
+		border: 12px solid #020202;
+		    margin-top: .2em;
+		    margin-bottom: .2em;
+}
+body>section>article>article>div>footer{
+color: black;
+}
+
+/* MI CUENTA */
+
+body>section>article#menuUser{
+	text-align: center;
+}
+
+
+
+
+	
+
+
+

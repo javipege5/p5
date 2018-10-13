@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>PI - Pictures & Image</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Bloc de notas" /> 
+	<meta name="author" content="Javier Pegenaute Zudaire y Francisco Jiménez Zamora" /> 
+	<meta name="keywords" content="HTML5, web" /> 
+	<meta name="description" content="Plantilla base de una página creada con HTML5" /> 
+	<link rel="stylesheet" href="css/style.css" type="text/css"  media="screen and (min-width: 1025px)" />
+	<link rel="stylesheet" href="css/medium.css" type="text/css"  media="screen and (min-width: 481px) and (max-width: 1024px)" />
+	<link rel="stylesheet" href="css/small.css" type="text/css"  media="screen and (max-width: 480px)" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" media ="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" title="Estilo para impresión" />
+	<link rel="stylesheet" href="css/fontello.css">
+
+</head>
+
+<body>
+	
+	<header>
+	<a href="index.html">
+	<img src="img/logo.png" alt="Logo PI" /></a>
+
+	<!--<div>
+	<h1> PI - Pictures & Images</h1>
+	<p>Tu sitio web de álbumes y fotos.</p>
+	</div>--> 
+	<div>
+	<!-- MENU NAVEGACION --> 
+	<input type="checkbox" id="menuHam">
+	<nav>
+		<ul>
+			<li><label for="menuHam">&equiv;</label><span class="icon-login" aria-hidden="true"></span></li>
+			<li><a href="index.html"><span class="icon-home" aria-hidden="true"></span><span>INICIO</span></a></li>
+			<li><a href="registroNuevoUsuario.html"><span class="icon-user-add" aria-hidden="true"></span><span>REGÍSTRATE</span></a></li>
+			<li><a href="formularioBusqueda.html"><span class="icon-search" aria-hidden="true"></span><span>BÚSQUEDA</span></a></li>
+		</ul>
+	</nav>
+	<!-- FORMULARIO INICIO SESION  --> 
+	<form action="menuUsuarioRegis.html">
+		<input type="text" name="usuario" autofocus id="1"   placeholder="Usuario"  maxlength="20" required>
+		<input type="password"  placeholder="Contraseña"  maxlength="20">
+		<input type="submit" value="IR" name="IR">
+	</form>
+</div>
+	
+	</header>
+	
+<section id="fondoG">
+	<!-- BUSCADOR RAPIDO 
+	<label><span class="icon-search" aria-hidden="true"></span><input type="search" placeholder="Buscar..."></label> --> 
+		
+	<!-- detalleFoto  --> 
+		
+			<article>
+				<article>
+					<div>
+				<h3>Foto seleccionada</h3>
+				<!-- FALTA METER FOTO-->
+				<img src="img/foto1.jpg" alt="foto1" />
+				
+				<footer>
+					
+							<p>Foto</p>
+							<p>Título</p>
+						<p><time datetime="2018-01-29">2018-01-29</time></p>
+							<p>País</p>
+							<p>Álbum</p>
+							<p>Usuario</p>
+					
+					
+				</footer>
+			</div>
+			</article>
+
+
+		 	</article>
+		 </section>
+
+<footer>
+		<p><time datetime="2018-09"> Septiembre 2018 - </time><strong> DAW </strong></p>
+		<a> Javier Pegenaute Zudaire  &copy; - Fran Jiménez Zamora &copy; </a>
+</footer>
+	
+</body>
+</html>

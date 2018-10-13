@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>PI - Pictures & Image</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Bloc de notas" /> 
+	<meta name="author" content="Javier Pegenaute Zudaire y Francisco Jiménez Zamora" /> 
+	<meta name="keywords" content="HTML5, web" /> 
+	<meta name="description" content="Plantilla base de una página creada con HTML5" /> 
+	<link rel="stylesheet" href="css/style.css" type="text/css"  media="screen and (min-width: 1025px)" />
+	<link rel="stylesheet" href="css/medium.css" type="text/css"  media="screen and (min-width: 481px) and (max-width: 1024px)" />
+	<link rel="stylesheet" href="css/small.css" type="text/css"  media="screen and (max-width: 480px)" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" media ="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" title="Estilo para impresión" />
+	<link rel="stylesheet" href="css/fontello.css">
+
+</head>
+
+<body>
+	
+	<header>
+	<a href="index.html">
+	<img src="img/logo.png" alt="Logo PI" /></a>
+
+	<!--<div>
+	<h1> PI - Pictures & Images</h1>
+	<p>Tu sitio web de álbumes y fotos.</p>
+	</div>--> 
+	<div>
+	<!-- MENU NAVEGACION --> 
+	<input type="checkbox" id="menuHam">
+	<nav>
+		<ul>
+			<li><label for="menuHam">&equiv;</label><span class="icon-login" aria-hidden="true"></span></li>
+			<li><a href="index.html"><span class="icon-home" aria-hidden="true"></span><span>INICIO</span></a></li>
+			<li><a href="registroNuevoUsuario.html"><span class="icon-user-add" aria-hidden="true"></span><span>REGÍSTRATE</span></a></li>
+			<li><a href="formularioBusqueda.html"><span class="icon-search" aria-hidden="true"></span><span>BÚSQUEDA</span></a></li>
+		</ul>
+	</nav>
+	<!-- FORMULARIO INICIO SESION  --> 
+	<form action="menuUsuarioRegis.html">
+		<input type="text" name="usuario" autofocus id="1"   placeholder="Usuario"  maxlength="20" required>
+		<input type="password"  placeholder="Contraseña"  maxlength="20">
+		<input type="submit" value="IR" name="IR">
+	</form>
+</div>
+	
+	</header>
+<section class="fondoG">
+	<!-- BUSCADOR RAPIDO  
+	<label><input type="search" placeholder="Buscar..."></label>--> 
+	<!-- PEDIDO PARA ALBUM--> 
+		<article>
+
+			<article>
+					
+						<form>
+			    	<label ><b>Nombre: </b></label>
+			    	<input type="text" autofocus placeholder="Ej: Cristiano Ronaldo" maxlength="200" required><br>
+			    	<br>
+ 					<label ><b>Título del álbum: </b></label>
+			    	<input type="text"  placeholder="Ej: Vacaciones en Ibiza"  maxlength="200" required><br>
+			  		<textarea  placeholder="Descripción adicional del album" rows="2" maxlength=4000></textarea><br><br>
+			  	
+			      	<label ><b>Correo electrónico</b></label>
+		   		 	<input type="email"  required placeholder="Ej: ronaldo69@gmail.com"  maxlength="200"><br><br>
+		     		<label ><b>Dirección: </b></label>
+		    		<input type="text"  placeholder="Ej: Calle la ventanilla"  required><br><br>
+		    		<label ><b>Número: </b></label>
+		    		<input type="number"  placeholder=" 5 "  required><br><br>
+		    		<label ><b>Piso: </b></label>
+		    		<input type="text"  placeholder=" 1ºC "  required> <br><br>
+		    		<label ><b>Código postal: </b></label>
+		    		<input type="text"  placeholder="Ej: 31200"  required><br><br>
+				</form>
+			  	<form action="respuestaSolicitar.html">
+
+		    		<label ><b>Localidad: </b></label>
+		    	
+		    		<input type="text"  placeholder="Ej: Pamplona"  required><br><br>
+				<label ><b>Provincia: </b></label>
+		    		
+
+		    		<select>
+		    			<option value= "...">...</option>
+		    			<option value="Navarra">Navarra</option>
+		    			<option value="Navarra">Navarra</option>
+		    			<option value="Navarra">Navarra</option>
+		    		</select>
+		    		<label ><b>Pais </b></label>
+		    		<input type="text"  placeholder="Ej: España"  required><br>
+		    		<label ><b>Color de portada: </b></label>
+			    	<input type="color"><br>
+			    	<label>Número de copias: </label>
+			      	<input type="number" min="1" value="1" required><br><br>
+			      	<label>Resolución de las fotos (dpi): </label>
+			      	<input type="number" min="150" max="900" value="150" step="150"> <br><br>
+
+ 					<!--<label ><b>Álbum elegido: </b></label>
+		    		<input type="text"  placeholder="Introduce un álbum"  required><br>-->
+
+
+		    		<label ><b>Álbum elegido: </b></label>
+		    	
+		    		<select>
+		    			<option value= "...">...</option>
+		    			<option value="Album1">Album 1</option>
+		    			<option value="Album2">Album 2</option>
+
+
+		    		</select ><br><br>
+
+			     	<label ><b>Fecha de recepción: </b></label>
+		   			<input type="date"  required><br><br>
+		    		<label ><b>Sexo: </b></label> 
+		    		<label><input type="radio" name="sexo"  value="negro" checked="checked" /> <b>Negro</b></label>
+					<label><input type="radio" name="sexo" value="color" /> <b>Color: </b></label><br>
+
+					<input type="submit" value="Pedir" name="Pedir">
+
+
+
+					</form>
+					<table border="1">
+  <caption><b><i>Tarifas</i></b></caption>
+  <tbody>
+    <tr>
+     
+      <th><i>Concepto</i></th>
+      <th><i>Tarifa</i></th>
+    </tr>
+    <tr>
+      
+      <td>5 páginas</td>
+      <td>0.10€ por pág.</td>
+    </tr>
+
+    <tr>
+      <td>entre 5 y 10 páginas.</td>
+      <td>0.08€ por pág.</td>
+    </tr>
+    <tr>
+      <td>> 11 páginas </td>
+      <td>0.07€ pág</td>
+    </tr>
+    <tr>
+      <td>Blanco y negro</td>
+      <td>0€</td>
+    </tr>
+    <tr>
+      <td>Color</td>
+      <td>0.05€ por foto</td>
+    </tr>
+    <tr>
+      <td>Resolucion > 300 dpi</td>
+      <td>0.02€ por foto</td>
+    </tr>
+  </tbody>
+</table>
+				</article>	
+			</article>
+
+
+
+</section>
+<footer>
+		<p><time datetime="2018-09"> Septiembre 2018 - </time><strong> DAW </strong></p>
+		<a> Javier Pegenaute Zudaire  &copy; - Fran Jiménez Zamora &copy; </a>
+</footer>
+	
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>PI - Pictures & Image</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Bloc de notas" /> 
+	<meta name="author" content="Javier Pegenaute Zudaire y Francisco Jiménez Zamora" /> 
+	<meta name="keywords" content="HTML5, web" /> 
+	<meta name="description" content="Plantilla base de una página creada con HTML5" /> 
+	<link rel="stylesheet" href="css/style.css" type="text/css"  media="screen and (min-width: 1025px)" />
+	<link rel="stylesheet" href="css/medium.css" type="text/css"  media="screen and (min-width: 481px) and (max-width: 1024px)" />
+	<link rel="stylesheet" href="css/small.css" type="text/css"  media="screen and (max-width: 480px)" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" media ="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" title="Estilo para impresión" />
+	<link rel="stylesheet" href="css/fontello.css">
+
+</head>
+
+<body>
+	
+	<header>
+		<a href="index.html"><img src="img/logoLetra.png" alt="Logo PI" /></a>
+	<div class="modal-wrapper" id="popup">
+   <div class="popup-contenedor">
+      <h2>LOGIN</h2>
+      <form action="menuUsuarioRegis.html" id="formSmall">
+		<input type="text"  autofocus    placeholder="Usuario"  maxlength="20" required> <br>
+		<input type="password"  placeholder="Contraseña"  maxlength="20"><br>
+		<input type="submit" value="LOGIN" >
+	</form>
+      <a class="popup-cerrar" href="#">X</a>
+   </div>
+	</div>
+	<div>
+	<!-- MENU NAVEGACION --> 
+	<input type="checkbox" id="menuHam">
+	<nav>
+		<ul>
+		<li><label for="menuHam"> <span class="icon-menu" aria-hidden="true"></span></label><a href="index.html"><img src="img/logoLetra.png" alt="Logo PI" /></a><a href="#popup" class="popup-link"><span class="icon-login" aria-hidden="true"></span></a></li>
+			<li><a href="index.html"><span class="icon-home" aria-hidden="true"></span><span>INICIO</span></a></li>
+			<li><a href="registroNuevoUsuario.html"><span class="icon-user-add" aria-hidden="true"></span><span>REGÍSTRATE</span></a></li>
+			<li><a href="formularioBusqueda.html"><span class="icon-search" aria-hidden="true"></span><span>BÚSQUEDA</span></a></li>
+		</ul>
+	</nav>
+	<!-- FORMULARIO INICIO SESION  --> 
+	<form action="menuUsuarioRegis.html">
+		<input type="text" name="usuario" autofocus placeholder="Usuario"  maxlength="20" required>
+		<input type="password"  placeholder="Contraseña"  maxlength="20">
+		<input type="submit" value="IR" name="IR">
+	</form>
+	</div>
+	</header>
+
+	<section class="fondoG">
+	
+	<!-- BUSCADOR RAPIDO  --> 
+	<!--<label><span class="icon-search" aria-hidden="true"></span><input type="search" placeholder="Buscar..."></label> -->
+		
+	<!-- LISTA FOTOS  --> 
+		<h2>Últimas 5 fotos</h2>
+		<div>
+		<article>
+			<div class="imgArticulo" >
+				<header>
+			<a href="detalleFoto.html"><h3>Titulo Foto</h3></a>
+				</header>	
+		</div>
+		<footer>
+				<h4 title="Pais">Pais</h4>
+				<h6><time datetime="2018-09-24">24-09-2018</time></h6>
+		</footer>
+		</article>
+
+			<article>
+			<div class="imgArticulo" style="background-image: url(img/foto1.jpg)">
+				<header>
+			<a href="detalleFoto.html"><h3>Titulo Foto</h3></a>
+				</header>	
+		</div>
+		<footer>
+				<h4 title="Pais">Pais</h4>
+				<h6><time datetime="2018-09-24">24-09-2018</time></h6>
+		</footer>
+		</article>
+
+				<article>
+			<div class="imgArticulo" style="background-image: url(img/foto1.jpg)">
+				<header>
+			<a href="detalleFoto.html"><h3>Titulo Foto</h3></a>
+				</header>	
+		</div>
+		<footer>
+				<h4 title="Pais">Pais</h4>
+				<h6><time datetime="2018-09-24">24-09-2018</time></h6>
+		</footer>
+		</article>
+
+			<article>
+			<div class="imgArticulo" style="background-image: url(img/foto1.jpg)">
+				<header>
+			<a href="detalleFoto.html"><h3>Titulo Foto</h3></a>
+				</header>	
+		</div>
+		<footer>
+				<h4 title="Pais">Pais</h4>
+				<h6><time datetime="2018-09-24">24-09-2018</time></h6>
+		</footer>
+		</article>
+
+		<article>
+			<div class="imgArticulo" style="background-image: url(img/foto1.jpg)">
+				<header>
+			<a href="detalleFoto.html"><h3>Titulo Foto</h3></a>
+				</header>	
+		</div>
+		<footer>
+				<h4 title="Pais">Pais</h4>
+				<h6><time datetime="2018-09-24">24-09-2018</time></h6>
+		</footer>
+		</article>
+
+
+
+	
+	</div>
+</section>
+<footer>
+		<p><time datetime="2018-09"> Septiembre 2018 - </time><strong> DAW </strong></p>
+		<a> Javier Pegenaute Zudaire  &copy; - Francisco Jiménez Zamora &copy; </a>
+</footer>
+	
+</body>
+</html>
