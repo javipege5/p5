@@ -20,19 +20,24 @@
 <body>
 	
 	<header>
-	<a href="index.html">
-	<img src="img/logo.png" alt="Logo PI" /></a>
-
-	<!--<div>
-	<h1> PI - Pictures & Images</h1>
-	<p>Tu sitio web de álbumes y fotos.</p>
-	</div>--> 
+		<a href="index.html"><img src="img/logoLetra.png" alt="Logo PI" /></a>
+	<div class="modal-wrapper" id="popup">
+   <div class="popup-contenedor">
+      <h2>LOGIN</h2>
+      <form action="menuUsuarioRegis.html" id="formSmall">
+		<input type="text"  autofocus    placeholder="Usuario"  maxlength="20" required> <br>
+		<input type="password"  placeholder="Contraseña"  maxlength="20"><br>
+		<input type="submit" value="LOGIN" >
+	</form>
+      <a class="popup-cerrar" href="#">X</a>
+   </div>
+	</div>
 	<div>
 	<!-- MENU NAVEGACION --> 
 	<input type="checkbox" id="menuHam">
 	<nav>
 		<ul>
-			<li><label for="menuHam">&equiv;</label><span class="icon-login" aria-hidden="true"></span></li>
+		<li><label for="menuHam"> <span class="icon-menu" aria-hidden="true"></span></label><a href="index.html"><img src="img/logoLetra.png" alt="Logo PI" /></a><a href="#popup" class="popup-link"><span class="icon-login" aria-hidden="true"></span></a></li>
 			<li><a href="index.html"><span class="icon-home" aria-hidden="true"></span><span>INICIO</span></a></li>
 			<li><a href="registroNuevoUsuario.html"><span class="icon-user-add" aria-hidden="true"></span><span>REGÍSTRATE</span></a></li>
 			<li><a href="formularioBusqueda.html"><span class="icon-search" aria-hidden="true"></span><span>BÚSQUEDA</span></a></li>
@@ -40,12 +45,11 @@
 	</nav>
 	<!-- FORMULARIO INICIO SESION  --> 
 	<form action="menuUsuarioRegis.html">
-		<input type="text" name="usuario" autofocus id="1"   placeholder="Usuario"  maxlength="20" required>
+		<input type="text" name="usuario" autofocus placeholder="Usuario"  maxlength="20" required>
 		<input type="password"  placeholder="Contraseña"  maxlength="20">
 		<input type="submit" value="IR" name="IR">
 	</form>
-</div>
-	
+	</div>
 	</header>
 
 
