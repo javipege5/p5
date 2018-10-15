@@ -164,7 +164,7 @@ body>header>div{
     height: 245px;
     background-size: cover;
     background-position: center center;
-    background-image: url("/p5/img/foto1.jpg");
+    background-image: url("../p5/img/foto1.jpg");
 
 	}
 

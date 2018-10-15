@@ -217,7 +217,9 @@
 	}
 
 
-	
+	body>section>div>article>h3{
+    display: none;
+}
 
 	body>section>div>article>div>header>a{
 		text-decoration: none;

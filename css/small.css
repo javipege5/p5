@@ -211,7 +211,9 @@
 		flex-grow: .5; /* valor de crecimiento del elemento cuando tiene espacio */ 
 		flex: 0 0 30%;
 	}
-
+body>section>div>article>h3{
+    display: none;
+}
 
 	
 

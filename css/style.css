@@ -283,7 +283,9 @@
      color: black;
 
 }
-
+body>section>div>article>h3{
+    display: none;
+}
     body>section>article>article>div>img{
     border: 4px solid #000000;
     margin: 0 auto;
