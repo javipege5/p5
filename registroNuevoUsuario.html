@@ -45,7 +45,7 @@
 	</nav>
 	<!-- FORMULARIO INICIO SESION  --> 
 	<form action="menuUsuarioRegis.html">
-		<input type="text" name="usuario" autofocus placeholder="Usuario"  maxlength="20" required>
+		<input type="text" name="usuario" placeholder="Usuario"  maxlength="20" required>
 		<input type="password"  placeholder="Contraseña"  maxlength="20">
 		<input type="submit" value="IR" name="IR">
 	</form>
@@ -58,40 +58,62 @@
 		<section class="fondoG">
 
 		<h2>REGÍSTRATE</h2>
-		<article>
-		<form id="registroUsuario">
-		    <label ><b>Nombre de usuario: </b><br>
-		    <input type="text"  placeholder="Introduce nombre de usuario" required></label><br>
+		<article class="container">
+		<form action="menuUsuarioRegis.html">
+			<ul class="flexForm">
+			<li>
+			<label>Nombre de usuario:</label>
+		    <input type="text"  placeholder="Introduce nombre de usuario" required>
+			</li>
 
-		    <label><b>Contraseña: </b><br>
-		    <input type="password" placeholder="Introduce Contraseña" required></label><br>
+			<li>
+		    <label>Contraseña:</label>
+		    <input type="password" placeholder="Introduce Contraseña" required>
+			</li>
 
-		    <label><b>Repite Contraseña: </b><br>
-		    <input type="password" placeholder="Vuelve a introducir tu contraseña"  required></label><br>
+			<li>
+		    <label>Repite Contraseña: </label>
+		    <input type="password" placeholder="Vuelve a introducir tu contraseña"  required>
+			</li>
 
-		    <label ><b>Correo electrónico: </b><br>
-		    <input type="text" placeholder="xxx@xxx.com"  required></label><br>
+			<li>
+		    <label>Correo electrónico: </label>
+		    <input type="text" placeholder="xxx@xxx.com"  required>
+			</li>
 
-		    <label ><b>Sexo: </b></label><br>
-		    	<label><input type="radio" name="sexo"  value="hombre" checked="checked" /> <b>Hombre </b></label>
-<label><input type="radio" name="sexo" value="mujer" /> <b>Mujer </b></label><br>
+			<li>
+		    <label>Sexo: </label>
+		    <label><input type="radio" name="sexo"  value="hombre" checked="checked" /> Hombre </label>
+			<label><input type="radio" name="sexo" value="mujer" /> Mujer </label>
+			</li>
+			
+			<li>
+		    <label>Fecha de nacimiento: </label>
+		    <input type="date" required>
+			</li> 
+			
+			<li>
+		    <label>Ciudad: </label>
+		    <input type="text"  placeholder="Introduce ciudad"  required>
+			</li>
 
-		    <label ><b>Fecha de nacimiento: </b><br>
-		    <input type="date" required></label><br>
+			<li>
+		    <label>País de residencia: </label>
+		    <input type="text"  placeholder="Introduce país de residencia"  required>
+			</li>
 
-		    <label ><b>Ciudad: </b><br>
-		    <input type="text"  placeholder="Introduce ciudad"  required></label><br>
-
-		    <label ><b>País de residencia: </b><br>
-		    <input type="text"  placeholder="Introduce país de residencia"  required></label><br>
-
-			<label><b>Sube imagen: </b> <br>
-			<input type="file" name="nombre" /></label><br>
-		  
-
-		    <input type="submit" value="Registrarme"><br>
-		    
+			<li>
+			<label>Sube imagen:  </label>
+			<input type="file" name="nombre" />
+		  	</li>
+			<li>
+		    <input type="submit" value="Registrarme">
+		    </li>
+		  </ul>
 		</form>
+		
+
+
 	</article>	
 	</section>
 

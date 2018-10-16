@@ -82,6 +82,7 @@
 	}
 	#menuHam:checked+nav>ul{
 		 max-height: 12em;
+		 letter-spacing: .05em;
 	}
 	#menuHam:checked+nav>ul>li:nth-of-type(1)>label{
 		transform: rotate(0);
@@ -132,6 +133,7 @@
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+    padding: 8px;
 	}
 	#formSmall>input[type="text"],#formSmall>input[type="password"]{
 	width: auto;
@@ -139,6 +141,8 @@
     text-align: left;
     font-weight: bold;
     padding: 2px;
+    border: inset;
+    padding: 8px;
 	}
 	
 
@@ -267,7 +271,7 @@
 	/* FOOTER WEB */
 	
 	body>footer{
-
+	
 	overflow: hidden;
 	padding:.5em;
  	width: 100%;
@@ -290,21 +294,80 @@
 }
 
 
-	/* FORMULARIO REGISTRO USUARIO */  /* FORMULARIO BÚSQUEDA */
+		/* CLASE FORMULARIO REGISTRO USUARIO */  /* FORMULARIO BÚSQUEDA */
 
-	body>section>article>form#registroUsuario,body>section>article>form#formBusqueda{
-		margin: 20px;
-		text-align: center;
-	}
-	
-	
-	body>section>article>form#registroUsuario>label>input,body>section>article>form#formBusqueda>label>input{
-	margin: 4px;
-    margin-bottom: 14px;
+	.flexForm>li:not(:nth-child(5)){
+		display: flex;
+  		flex-wrap: wrap;
+  		align-items: center;
 	}
 
-	input[type="submit"]{
-		cursor: pointer;
+	.flexForm>li:nth-child(5)>label:not(:nth-child(1)){ /* EL CAMPO SEXO DEL FORMULARIO */
+
+		padding: 0;
+		display: block;
+		margin-top: 20px;
+	} 
+
+
+	.flexForm>li>label{
+  		flex: 1 0 120px;
+  		max-width: 330px;
+	}
+
+	.flexForm > li > label + *{
+  		flex: 1 0 330px;
+	}
+
+	.flexForm>li>input[type="submit"]  {
+	    cursor: pointer;
+    margin-left: auto;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 10px;
+	}
+
+	.container {
+ 	 	width: 80%;
+  		max-width: 1200px;
+ 		margin: 0 auto;
+	}
+
+	.container * {
+	  box-sizing: border-box;
+	}
+
+	.flexForm {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	.flexForm {
+	  max-width: 800px;
+	  margin: 0 auto;
+	}
+
+	
+	.flexForm > li {
+	  margin-bottom: 20px;
+	}
+
+	.flexForm li label{
+	  padding: 8px;
+	  font-weight: 300;
+	  letter-spacing: .09em;
+	  text-transform: uppercase;
+	}
+
+
+
+	.flexForm li input:not([type='checkbox']),
+	.flexForm li textarea {
+	  padding: 15px;
+	  border: none;
 	}
 
 	/* solicitar album formulario*/

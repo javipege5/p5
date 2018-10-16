@@ -25,8 +25,8 @@
    <div class="popup-contenedor">
       <h2>LOGIN</h2>
       <form action="menuUsuarioRegis.html" id="formSmall">
-		<input type="text"  autofocus    placeholder="Usuario"  maxlength="20" required> <br>
-		<input type="password"  placeholder="Contraseña"  maxlength="20"><br>
+		<input type="text"  autofocus    placeholder="Usuario"  maxlength="20" required> 
+		<input type="password"  placeholder="Contraseña"  maxlength="20">
 		<input type="submit" value="LOGIN" >
 	</form>
       <a class="popup-cerrar" href="#">X</a>
@@ -54,17 +54,26 @@
 <section class="fondoG">
 
 		<h2>BÚSQUEDA AVANZADA</h2>
-			<article>
-			<form id="formBusqueda" action="resultadoBusqueda.html">
-				<label>Buscar por título: <br><textarea name="tituloBusq" placeholder="Ej: Atardecer en Manila" rows="2" maxlength=200></textarea></label><br>
+			<article class="container">
+			<form action="resultadoBusqueda.html">
+				<ul class="flexForm" >
+					<li>
+						<label>Buscar por título:</label><textarea name="tituloBusq" placeholder="Ej: Atardecer en Manila" rows="2" maxlength=200></textarea>
+					</li>
 
-				<label>Buscar por país: <br><textarea name="paisBusq" placeholder="Ej: Filipinas" rows="4"></textarea></label><br>
+					<li>
+						<label>Buscar por país:</label> <textarea name="paisBusq" placeholder="Ej: Filipinas" rows="4"></textarea>
+					</li>
+					<li>
+						<label>Fecha desde.. </label> <input type="date" name="fechaBusq">
+					</li>
+					<li>
+						<label>..hasta </label> <input type="date" name="fechaBusq">
+					</li>
 
-				<label>Fecha entre: <input type="date" name="fechaBusq"></label> y: <label><input type="date" name="fechaBusq"> </label><br>
-
-				<input type="submit" value="Buscar" name="Buscar">
+				<li><input type="submit" value="Buscar" name="Buscar"></li>
 				
-
+			</ul>
 			</form>
 		</article>
 		
