@@ -59,17 +59,17 @@
 			<form action="resultadoBusqueda.html">
 				<ul class="flexForm" >
 					<li>
-						<label>Buscar por título:</label><textarea name="tituloBusq" placeholder="Ej: Atardecer en Manila" rows="2" maxlength=200></textarea>
+						<label for="buscar-titulo">Buscar por título:</label><textarea name="tituloBusq" placeholder="Ej: Atardecer en Manila" id="buscar-titulo" rows="2" maxlength=200></textarea>
 					</li>
 
 					<li>
-						<label>Buscar por país:</label> <textarea name="paisBusq" placeholder="Ej: Filipinas" rows="4"></textarea>
+						<label for="buscar-pais">Buscar por país:</label> <textarea name="paisBusq" placeholder="Ej: Filipinas" id="buscar-pais" rows="4"></textarea>
 					</li>
 					<li>
-						<label>Fecha desde.. </label> <input type="date" name="fechaBusq">
+						<label for="fecha-desde">Fecha desde.. </label> <input type="date" name="fechaBusq" id="fecha-desde">
 					</li>
 					<li>
-						<label>..hasta </label> <input type="date" name="fechaBusq">
+						<label for="fecha-hasta">..hasta </label> <input type="date" name="fechaBusq" id="fecha-hasta">
 					</li>
 
 				<li><input type="submit" value="Buscar" name="Buscar"></li>

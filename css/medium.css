@@ -290,13 +290,13 @@
 
 		/* CLASE FORMULARIO REGISTRO USUARIO */  /* FORMULARIO BÚSQUEDA */
 
-	.flexForm>li:not(:nth-child(5)){
+	.flexForm>li:not(:nth-child(5)){ /* EL CAMPO SEXO DEL FORMULARIO */
 		display: flex;
   		flex-wrap: wrap;
   		align-items: center;
 	}
 
-	.flexForm>li:nth-child(5)>label:not(:nth-child(1)){ /* EL CAMPO SEXO DEL FORMULARIO */
+	.flexForm>li:nth-child(5)>label:not(:nth-child(1)){ 
 
 		padding: 0;
 		display: block;
