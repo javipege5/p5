@@ -422,6 +422,115 @@ color: black;
 body>section>article#menuUser{
 	text-align: center;
 }
+body>section>article#menuUser{
+	text-align: center;
+}
+.flexForm1>li:not(:nth-child(5)){ 
+		display: flex;
+  		flex-wrap: wrap;
+  		align-items: center;
+	}
+
+	.flexForm1>li>label{
+  		flex: 1 0 120px;
+  		max-width: 330px;
+	}
+
+	
+
+	
+	
+	.container {
+ 	 	width: 80%;
+  		max-width: 1200px;
+ 		margin: 0 auto;
+	}
+
+	.container * {
+	  box-sizing: border-box;
+	}
+
+	.flexForm1 {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	.flexForm1 {
+	  max-width: 800px;
+	  margin: 0 auto;
+	  text-align: center;
+	}
+
+	
+	.flexForm1 > li {
+	  margin-bottom: 20px;
+	}
+
+	.flexForm1 li label{
+	  padding: 8px;
+	  font-weight: 300;
+	  letter-spacing: .09em;
+	  text-transform: uppercase;
+	   margin-top: 0.4em;
+	}
+
+
+
+	.flexForm1 li textarea {
+	  padding: 15px;
+	  border: none;
+	  font-size: 100%;
+	}
+
+.boton_personalizado{
+ 
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    color: #000000;
+    background-color: #00567f;
+    border-radius: 15px;
+    border: 3px double #000000;
+  }
+  .boton_personalizado:hover{
+    opacity: 0.9;
+    text-decoration: none;
+  }.boton_personalizado2{
+ 
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: .3em;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    color: #000000;
+    background-color: #09b4ca;
+    border-radius: 15px;
+    border: 3px double #000000;
+  }
+  .boton_personalizado2:hover{
+    opacity: 0.9;
+    text-decoration: none;
+  }
+  body>section>article{
+  	text-align: center;
+  }
+body>section>article>nav{
+	display: inline-block;
+	
+}
+	
+
+
+
 
 
 
