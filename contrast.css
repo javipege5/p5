@@ -1,0 +1,35 @@
+body {
+	font-size: 22px;
+}
+
+body, button {
+	color: white;
+	background-color: black;
+}
+
+button, table, tr, th, td {
+	border-color: white;
+	border-width: 0.5em;
+}
+
+a {
+	color: yellow;
+}
+
+a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: white;
+	outline: 0.25em solid lime;
+}
+
+*:focus {
+	outline: 0.25em solid lime;
+}
+
+img {
+	filter: invert(100%);
+}
+
