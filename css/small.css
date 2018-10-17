@@ -189,12 +189,6 @@
 
 	/* FONDO DE WEB */
 	.fondoG{
-
-	border-radius: 1px;
-    font-size: 18px;
-    border-top: 1px solid;
-    /*background-image: url(../img/fondo.jpg);*/
-  
 	}
 
 
@@ -267,7 +261,7 @@ body>section>div>article>h3{
 	/* FOOTER WEB */
 	
 	body>footer{
-	
+	position: fixed;
 	overflow: hidden;
 	padding:.5em;
  	width: 100%;
@@ -307,14 +301,15 @@ body>section>div>article>h3{
 	}
 
 	.flexForm>li>input[type="submit"]  {
-	  cursor: pointer;
-    margin-left: auto;
-    border: none;
-    background: #333;
-    color: #f2f2f2;
-    text-transform: uppercase;
-    letter-spacing: .09em;
-    border-radius: 10px;
+			cursor: pointer;
+	    border: none;
+	    background: #333;
+	    color: #f2f2f2;
+	    text-transform: uppercase;
+	    letter-spacing: .09em;
+	    border-radius: 10px;
+	    margin: auto;
+	    margin-bottom: 40px;
 	}
 
 	.container {
@@ -337,7 +332,7 @@ body>section>div>article>h3{
 	}
 
 	
-	.flexForm > li: {
+	.flexForm > li {
 	  margin-bottom: 20px;
 	}
 
@@ -354,6 +349,11 @@ body>section>div>article>h3{
 	.flexForm li textarea {
 	  padding: 15px;
 	  border: none;
+	  font-size: 100%;
+	}
+
+	input[type="file" i] {
+		
 	}
 
 

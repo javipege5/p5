@@ -1,5 +1,5 @@
 
-	input:focus {
+	input:focus, textarea:focus {
 	  color: #005581;
 	  border-color: #005581;}
 
@@ -133,7 +133,7 @@
 	/* FOOTER WEB */
 	
 	body>footer{
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgb(51, 51, 51);
     
 	}
 

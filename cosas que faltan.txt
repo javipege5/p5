@@ -1,11 +1,6 @@
-- posicionar footer web abajo del todo sin que se mueva
-- meterle un focus a los textareas, como el de los input
-- botones de submit de los formularios centrarlos y meterle efecto hover
-- pasar la clase del section al body para que no se quede espacio en blanco entre section y footer
-- copiar el encabezado del index.html a las demás paginas
 - cambiar color del body y tal vez de la fuente
 - hacer el resto de paginas: 
-detalleFoto, menuUsuarioRegis, respuestaSolicitar,resultadoBusqueda(copiar practicamente del index),solicitarAlbum
+detalleFoto, menuUsuarioRegis, respuestaSolicitar,solicitarAlbum
 - hacer version alternativa
 
 
