@@ -313,7 +313,7 @@
 	}
 
 	
-
+/**/
 
 
 
@@ -375,6 +375,44 @@ color: black;
 body>section>article#menuUser{
 	text-align: center;
 }
+.boton_personalizado{
+ 
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    color: #000000;
+    background-color: #00567f;
+    border-radius: 15px;
+    border: 3px double #000000;
+  }
+  .boton_personalizado:hover{
+    opacity: 0.9;
+    text-decoration: none;
+  }.boton_personalizado2{
+ 
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    color: #000000;
+    background-color: #09b4ca;
+    border-radius: 15px;
+    border: 3px double #000000;
+  }
+  .boton_personalizado2:hover{
+    opacity: 0.9;
+    text-decoration: none;
+  }
+
 
 
 
