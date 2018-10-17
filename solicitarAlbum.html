@@ -56,35 +56,40 @@
 	<!-- BUSCADOR RAPIDO  
 	<label><input type="search" placeholder="Buscar..."></label>--> 
 	<!-- PEDIDO PARA ALBUM--> 
-		<article>
+		
+			<section>
+					<h2>Solicita Album</h2>
 
-			<article>
-					
-						<form>
-			    	<label ><b>Nombre: </b></label>
-			    	<input type="text" autofocus placeholder="Ej: Cristiano Ronaldo" maxlength="200" required><br>
-			    	<br>
- 					<label ><b>Título del álbum: </b></label>
-			    	<input type="text"  placeholder="Ej: Vacaciones en Ibiza"  maxlength="200" required><br>
-			  		<textarea  placeholder="Descripción adicional del album" rows="2" maxlength=4000></textarea><br><br>
-			  	
-			      	<label ><b>Correo electrónico</b></label>
-		   		 	<input type="email"  required placeholder="Ej: ronaldo69@gmail.com"  maxlength="200"><br><br>
-		     		<label ><b>Dirección: </b></label>
-		    		<input type="text"  placeholder="Ej: Calle la ventanilla"  required><br><br>
-		    		<label ><b>Número: </b></label>
-		    		<input type="number"  placeholder=" 5 "  required><br><br>
-		    		<label ><b>Piso: </b></label>
-		    		<input type="text"  placeholder=" 1ºC "  required> <br><br>
-		    		<label ><b>Código postal: </b></label>
-		    		<input type="text"  placeholder="Ej: 31200"  required><br><br>
-				</form>
-			  	<form action="respuestaSolicitar.html">
+					<article class="container">
 
-		    		<label ><b>Localidad: </b></label>
+						<form action="respuestaSolicitar.html">
+					<ul class="flexForm">
+						<li>
+			    	<label><b>Nombre: </b></label>
+
+			    	<input type="text" autofocus placeholder="Ej: Cristiano Ronaldo" maxlength="200" required>
+			    </li>
+ 					
+ 					<li><label><b>Título del álbum: </b></label>
+			    	<input type="text"  placeholder="Ej: Vacaciones en Ibiza"  maxlength="200" required></li>
+			  		<li><textarea  class="areatexto" placeholder="Descripción adicional del album" rows="2" maxlength=4000></textarea><br><br>
+			  	</li>
+			      	<li><label ><b>Correo electrónico</b></label>
+		   		 	<input type="email"   placeholder="Ej: ronaldo69@gmail.com"  maxlength="200" required><br><br></li>
+		     		<li><label ><b>Dirección: </b></label>
+		    		<input type="text" class="direccion" placeholder="Ej: Calle la ventanilla"  required></li>
+		    		<li><label ><b>Número: </b></label>
+		    		<input type="number"  placeholder=" 5 "  required><br><br></li>
+		    		<li><label ><b>Piso: </b></label>
+		    		<input type="text"  placeholder=" 1ºC "  required> <br><br></li>
+		    		<li><label ><b>Código postal: </b></label>
+		    		<input type="text"  placeholder="Ej: 31200"  required><br><br></li>
+				
+			  
+		    		<li><label ><b>Localidad: </b></label>
 		    	
-		    		<input type="text"  placeholder="Ej: Pamplona"  required><br><br>
-				<label ><b>Provincia: </b></label>
+		    		<input type="text"  placeholder="Ej: Pamplona"  required><br><br></li>
+					<li><label ><b>Provincia: </b></label>
 		    		
 
 		    		<select>
@@ -92,21 +97,21 @@
 		    			<option value="Navarra">Navarra</option>
 		    			<option value="Navarra">Navarra</option>
 		    			<option value="Navarra">Navarra</option>
-		    		</select>
-		    		<label ><b>Pais </b></label>
-		    		<input type="text"  placeholder="Ej: España"  required><br>
-		    		<label ><b>Color de portada: </b></label>
-			    	<input type="color"><br>
-			    	<label>Número de copias: </label>
-			      	<input type="number" min="1" value="1" required><br><br>
-			      	<label>Resolución de las fotos (dpi): </label>
-			      	<input type="number" min="150" max="900" value="150" step="150"> <br><br>
+		    		</select></li>
+		    		<li><label ><b>Pais </b></label>
+		    		<input type="text"  placeholder="Ej: España"  required><br></li>
+		    		<li><label ><b>Color de portada: </b></label>
+			    	<input class="colordeporta" type="color" style="padding: 0">
+			    	<li><label>Número de copias: </label>
+			      	<input type="number" min="1" value="1" required><br><br></li>
+			      <li><label>Resolución de las fotos (dpi): </label>
+			      	<input type="number" min="150" max="900" value="150" step="150"> <br><br></li>
 
  					<!--<label ><b>Álbum elegido: </b></label>
 		    		<input type="text"  placeholder="Introduce un álbum"  required><br>-->
 
 
-		    		<label ><b>Álbum elegido: </b></label>
+		    		<li><label ><b>Álbum elegido: </b></label>
 		    	
 		    		<select>
 		    			<option value= "...">...</option>
@@ -114,18 +119,17 @@
 		    			<option value="Album2">Album 2</option>
 
 
-		    		</select ><br><br>
+		    		</select ></li>
 
-			     	<label ><b>Fecha de recepción: </b></label>
-		   			<input type="date"  required><br><br>
-		    		<label ><b>Sexo: </b></label> 
-		    		<label><input type="radio" name="sexo"  value="negro" checked="checked" /> <b>Negro</b></label>
-					<label><input type="radio" name="sexo" value="color" /> <b>Color: </b></label><br>
-
-					<input type="submit" value="Pedir" name="Pedir">
-
+			     <li>	<label><b>Fecha de recepción: </b></label>
+		   			<input type="date"  required></li>
+		    		<li><label ><b>Sexo: </b></label> 
+		    		<label ><input class="negro" type="radio" name="sexo"  value="negro" ="negro" checked="checked" /> <b>Negro</b></label>
+					<label ><input type="radio" name="sexo" value="color" /> <b>Color: </b></label>
+					<input type="submit" value="Pedir" name="Pedir"></li>
 
 
+				</ul>
 					</form>
 					<table border="1">
   <caption><b><i>Tarifas</i></b></caption>
@@ -163,7 +167,7 @@
     </tr>
   </tbody>
 </table>
-				</article>	
+				</section>	
 			</article>
 
 

@@ -330,7 +330,10 @@
   			box-sizing: border-box;
 	}
 
+.colordeporta{
+	margin-bottom: 20px;
 
+}
 /*DETALLE DE FOTO*/
 
 	body>section>article>article>div>h3 {
@@ -341,6 +344,16 @@
     text-align: center;   
      color: black;
 
+}
+.negro{
+	    margin-left: 12.3em;
+
+}
+.direccion{
+	margin-left: 10.3em;
+}
+.areatexto{
+	    margin-left: 18.3em;
 }
 body>section>div>article>h3{
     display: none;
