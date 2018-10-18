@@ -21,6 +21,7 @@ body>section>div>article>footer>h4{
 }
 body>section>div>article>footer>h6{
 	color:white;
+	font-size: 22px;
 }
 body>section>div>article>footer{
 	text-decoration-color: white;
@@ -51,9 +52,7 @@ a:hover {
 *:focus {
 	outline: 0.25em solid lime;
 }
-.fotologo{
-	display: none;
-}
+
 body>header>a>img {
 	
 	/*filter: invert(100%);*/

@@ -29,8 +29,19 @@ body>header>div{
 	input:focus {
   	border: 1px solid ;
 	}
-
+input{
+	display: none;
+}
+textarea{
+	display: none;
+}
+select{
+	display: none;
+}
 	/* LOGO */
+}
+}
+}
 /*
 	body>header>a, body>header>a>img{
 		height: 60px;
