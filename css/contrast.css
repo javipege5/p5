@@ -70,7 +70,7 @@ div.tabular, div.lstlisting, div.footnotes {
 	}
 	body>header>div>form>input[type="submit"]{
 		text-align: center;
-		width: 28px;
+		width: 38px;
 		cursor:pointer;
 		border-radius: 5px;
 		font-weight: bold;
