@@ -1,3 +1,59 @@
-*{
+body {
+	font-size: 22px;
+}
+
+body, button {
+	color: white;
 	background-color: black;
 }
+body>header>a>img{
+	background-image: url("img/logoLetra2.png");
+}
+button, table, tr, th, td {
+	border-color: white;
+	border-width: 0.5em;
+}
+body>section{
+	background-color: black;
+}
+body>section>div>article>footer>h4{
+	color:white;
+}
+body>section>div>article>footer>h6{
+	color:white;
+}
+body>section>div>article>footer{
+	text-decoration-color: white;
+	background-color: black;
+}
+.fondoG{
+	box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px;
+	border-top-color: #fff;
+	color: #FFFFFF;
+	background-color: black;
+}
+a {
+	color: yellow;
+}
+
+a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: white;
+	outline: 0.25em solid lime;
+}
+
+*:focus {
+	outline: 0.25em solid lime;
+}
+
+img {
+	filter: invert(100%);
+}
+
+div.tabular, div.lstlisting, div.footnotes {
+	background-color: #333;
+}
+
