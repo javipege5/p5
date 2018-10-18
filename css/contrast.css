@@ -6,8 +6,8 @@ body, button {
 	color: white;
 	background-color: black;
 }
-body>header>a>img{
-	background-image: url("img/logoLetra2.png");
+.fotologo2{
+	background-image: url("../img/logoLetra2.png");
 }
 button, table, tr, th, td {
 	border-color: white;
@@ -25,6 +25,9 @@ body>section>div>article>footer>h6{
 body>section>div>article>footer{
 	text-decoration-color: white;
 	background-color: black;
+}
+body>header>div>nav>ul>li>a{
+	font-size: 24px;
 }
 .fondoG{
 	box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px;
@@ -48,12 +51,40 @@ a:hover {
 *:focus {
 	outline: 0.25em solid lime;
 }
-
-img {
-	filter: invert(100%);
+.fotologo{
+	display: none;
+}
+body>header>a>img {
+	
+	/*filter: invert(100%);*/
 }
 
 div.tabular, div.lstlisting, div.footnotes {
 	background-color: #333;
-}
+}/* FORMULARIO INICIO SESION */
+	body>header>div>form{
+	margin-left: 6px;
+    margin-top: 14px;
+	font-size: 27px;
+
+	}
+	body>header>div>form>input[type="submit"]{
+		text-align: center;
+		width: 28px;
+		cursor:pointer;
+		border-radius: 5px;
+		font-weight: bold;
+	}
+	body>header>div>form>input[type="text"],body>header>div>form>input[type="password"]{
+		width: 95px;
+		font-weight: bold;
+		padding: 9px;
+	}
+	body>header>div>nav>ul>li{
+		display: inline;
+	}
+
+	body>header>div>h1{
+		margin-top:10px;
+	}
 

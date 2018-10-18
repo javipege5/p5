@@ -11,6 +11,9 @@
 	max-width: 1600px;
 	margin:auto ;/*¿¿poner auto??*/
 	}
+	body>header>img{
+		display: none;
+	}
 
 	input:focus {
   	border: 1px solid ;
@@ -358,7 +361,7 @@ width:99%;
  padding: 15px;
 	  border: none;
 	  font-size: 100%;
-	  
+
 }
 
 .negro{
