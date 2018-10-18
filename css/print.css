@@ -297,7 +297,9 @@ body>section>article#menuUser{
 }
 
 
-
+body>header>img{
+		display: none;
+	}
 
 	
 

@@ -13,6 +13,9 @@
 	input:focus {
   		border: 1px solid ;
 	}
+	body>header>img{
+		display: none;
+	}
 
 	/* LOGO */
 

@@ -18,6 +18,9 @@
 	body>header>a>img{
 		display: none;
 	}
+	body>header>img{
+		display: none;
+	}
 	
 	/* HEADER */
 
