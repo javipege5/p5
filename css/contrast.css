@@ -21,6 +21,11 @@ body>header>a>img#logoWhite{
 	display: block;
 }
 
+
+body>header>a>img#logoWhite{
+	display: block;
+}
+
 button, table, tr, th, td {
 	border-color: white;
 	border-width: 0.5em;
