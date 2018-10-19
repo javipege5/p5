@@ -264,18 +264,13 @@
 		cursor: pointer;
 	    border: none;
 	    background: #333;
-	    color: #f2f2f2;
 	    text-transform: uppercase;
 	    letter-spacing: .09em;
 	    border-radius: 10px;
 	    margin: auto;
 	    margin-bottom: 40px;
 	}
-	.flexForm>li>input[type="submit"]:hover{
-		background: rgba(0,0,0,0);
-		color: #00b5cb;
-		box-shadow: inset 0 0 0 3px #00b5cb;
-	}
+	
 
 	.container {
  	 	width: 80%;
@@ -318,10 +313,6 @@
 	  font-size: 100%;
 	}
 
-	
-/**/
-
-
 
 	/* solicitar album formulario*/
 
@@ -340,6 +331,7 @@
 	margin-bottom: 20px;
 
 }
+
 /*DETALLE DE FOTO*/
 
 	body>section>article>article>div>h3 {
@@ -348,8 +340,6 @@
     /* padding-left: .55em; */
     margin: .4em;
     text-align: center;   
-     color: black;
-
 }
 .detalle{
 	height:10%; 
@@ -375,23 +365,22 @@ width:99%;
 .areatexto{
 	    margin-left: 18.3em;
 }
-body>section>div>article>h3{
-    display: none;
-}
+	body>section>div>article>h3{
+    	display: none;
+	}
     body>section>article>article>div>img{
-    border: 4px solid #000000;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 521px;
-    height: 341px;
-     float: left;
+   	 	border: 4px solid #000000;
+    	margin: 0 auto;
+    	width: 100%;
+    	max-width: 521px;
+    	height: 341px;
+     	float: left;
     }
-caption {
-padding: 0.3em;
-color: #fff;
-background: #000;
-}
-table{
+	caption {
+		padding: 0.3em;
+	}
+	
+	table{
 	width: 100%;
 	margin-bottom: 4.3em;
    border: 1px solid #000;
@@ -401,15 +390,14 @@ table{
 th, td {
    width: 25%;
       vertical-align: top;
-text-align: left;
+	text-align: left;
  width: 25%;
    text-align: left;
    vertical-align: top;
    border: 1px solid #000;
       padding: 0.3em;
- background: #fff;
-   color: #000;
-}
+
+		}
 	/*Respuesta solicitar*/
 
 body>section>article>article{

@@ -307,7 +307,6 @@ body>section>div>article>h3{
 			cursor: pointer;
 	    border: none;
 	    background: #333;
-	    color: #f2f2f2;
 	    text-transform: uppercase;
 	    letter-spacing: .09em;
 	    border-radius: 10px;
@@ -377,8 +376,7 @@ body>section>div>article>h3{
     /* padding-left: .55em; */
     margin: .4em;
     text-align: center;   
-     color: black;
-
+    
 }
 
     body>section>article>article>div>img{

@@ -88,6 +88,37 @@
 		}
 
 
+	
+	/* CLASE FORMULARIO REGISTRO USUARIO */  /* FORMULARIO BÚSQUEDA */
+
+	.flexForm>li>input[type="submit"]  {
+		   color: #f2f2f2;
+
+	}
+
+	.flexForm>li>input[type="submit"]:hover{
+		background: rgba(0,0,0,0);
+		color: #00b5cb;
+		box-shadow: inset 0 0 0 3px #00b5cb;
+	}
+
+	/*DETALLE DE FOTO*/
+
+	body>section>article>article>div>h3 {
+     color: black;
+	}
+
+	caption {
+		color: #fff;
+		background: #000;
+	}
+
+	th, td {
+    background: #fff;
+   color: #000;
+		}
+
+
 	/* LISTA FOTOS */
 
 	
