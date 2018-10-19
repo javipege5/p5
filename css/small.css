@@ -524,7 +524,10 @@ body>section>article>nav{
 	
 
 
+body>section>article>nav>ul>li:nth-child(-n+4){
+   border-bottom: 1px solid;
 
+}
 
 
 
