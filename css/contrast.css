@@ -6,9 +6,16 @@ body, button {
 	color: white;
 	background-color: black;
 }
-.fotologo2{
-	background-image: url("../img/logoLetra2.png");
+
+body>header>a, body>header>a>img{
+		height: 40px;
+		margin-top: 1px;
+	}
+
+body>header>a>img#logo{
+	display: none;
 }
+
 button, table, tr, th, td {
 	border-color: white;
 	border-width: 0.5em;

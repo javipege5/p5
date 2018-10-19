@@ -11,10 +11,7 @@
 	max-width: 1600px;
 	margin:auto ;/*¿¿poner auto??*/
 	}
-	body>header>img{
-		display: none;
-	}
-
+	
 	input:focus {
   	border: 1px solid ;
 	}
@@ -24,6 +21,10 @@
 	body>header>a, body>header>a>img{
 		height: 40px;
 		margin-top: 1px;
+	}
+
+	body>header>a>img#logoWhite{
+		display: none;
 	}
 	
 	/* HEADER */
