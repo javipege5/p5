@@ -10,10 +10,15 @@ body, button {
 body>header>a, body>header>a>img{
 		height: 40px;
 		margin-top: 1px;
+
 	}
 
 body>header>a>img#logo{
 	display: none;
+}
+
+body>header>a>img#logoWhite{
+	display: block;
 }
 
 button, table, tr, th, td {
