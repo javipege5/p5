@@ -14,6 +14,10 @@ body {
 body>header>div{
 	display: none;
 }
+/*
+a:after{
+	content: "< " attr(href) "<";
+}*/
 
 	*{
   	font-family: Arial;
