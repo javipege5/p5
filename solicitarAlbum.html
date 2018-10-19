@@ -14,13 +14,16 @@
 	<link rel="stylesheet" href="css/colors.css" type="text/css" media ="screen"/>
 	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" title="Estilo para impresión" />
 	<link rel="stylesheet" href="css/fontello.css">
-<link rel="alternate stylesheet" type="text/css" title="alto contraste" href="css/contrast.css"/>
+	<link rel="alternate stylesheet" type="text/css" title="alto contraste" href="css/contrast.css"/>
+
 </head>
 
 <body class="fondoG">
 	
 	<header>
-		<a href="index.html"><img src="img/logoLetra.png" alt="Logo PI" /></a>
+		<a href="index.html"><img src="img/logoLetra.png" alt="Logo PI"  id="logo" /></a>
+		<a href="index.html"><img src="img/logoLetraWhite.png" alt="Logo PI" id="logoWhite" /></a>
+		
 	<div class="modal-wrapper" id="popup">
    <div class="popup-contenedor">
       <h2>LOGIN</h2>
@@ -45,10 +48,10 @@
 	</nav>
 	<!-- FORMULARIO INICIO SESION  --> 
 	<form action="menuUsuarioRegis.html">
-		<input type="text" name="usuario"  placeholder="Usuario"  maxlength="20" required>
+		<input type="text" name="usuario"  placeholder="Usuario" maxlength="20" required>
 		<input type="password"  placeholder="Contraseña"  maxlength="20">
-		<input type="submit" value="IR" name="IR">
-	</form>
+		<input type="submit" value="IR"  name="IR">
+	</form>	
 	</div>
 	</header>
 
@@ -65,55 +68,55 @@
 						<form action="respuestaSolicitar.html">
 					<ul class="flexForm">
 						<li>
-			    	<label><b>Nombre: </b></label>
+			    	<label for="nombre"><b>Nombre: </b></label>
 
-			    	<input type="text" autofocus placeholder="Ej: Cristiano Ronaldo" maxlength="200" required>
+			    	<input type="text" autofocus placeholder="Ej: Cristiano Ronaldo" maxlength="200" id="nombre" required>
 			    </li>
  					
- 					<li><label><b>Título del álbum: </b></label>
-			    	<input type="text"  placeholder="Ej: Vacaciones en Ibiza"  maxlength="200" required></li>
+ 					<li><label for="titulo-album"><b>Título del álbum: </b></label>
+			    	<input type="text"  placeholder="Ej: Vacaciones en Ibiza"  maxlength="200" id="titulo-album" required></li>
 			  		<li><textarea  class="areatexto" placeholder="Descripción adicional del album" rows="2" maxlength=4000></textarea><br><br>
 			  	</li>
-			      	<li><label ><b>Correo electrónico</b></label>
-		   		 	<input type="email"   placeholder="Ej: ronaldo69@gmail.com"  maxlength="200" required><br><br></li>
-		     		<li><label ><b>Dirección: </b></label>
-		    		<input type="text" class="direccion" placeholder="Ej: Calle la ventanilla"  required></li>
-		    		<li><label ><b>Número: </b></label>
-		    		<input type="number"  placeholder=" 5 "  required><br><br></li>
-		    		<li><label ><b>Piso: </b></label>
-		    		<input type="text"  placeholder=" 1ºC "  required> <br><br></li>
-		    		<li><label ><b>Código postal: </b></label>
-		    		<input type="text"  placeholder="Ej: 31200"  required><br><br></li>
+			      	<li><label for="correo-electronico" ><b>Correo electrónico</b></label>
+		   		 	<input type="email"   placeholder="Ej: ronaldo69@gmail.com"  maxlength="200" id="correo-electronico" required><br><br></li>
+		     		<li><label for="direccion" ><b>Dirección: </b></label>
+		    		<input type="text" class="direccion" placeholder="Ej: Calle la ventanilla" id="direccion" required></li>
+		    		<li><label for="numero"><b>Número: </b></label>
+		    		<input type="number"  placeholder=" 5 "  id="numero" required><br><br></li>
+		    		<li><label for="piso"><b>Piso: </b></label>
+		    		<input type="text"  placeholder=" 1ºC " id="piso" required> <br><br></li>
+		    		<li><label for="codigo-postal" ><b>Código postal: </b></label>
+		    		<input type="text"  placeholder="Ej: 31200" id="codigo-postal" required><br><br></li>
 				
 			  
-		    		<li><label ><b>Localidad: </b></label>
+		    		<li><label for="localidad"><b>Localidad: </b></label>
 		    	
-		    		<input type="text"  placeholder="Ej: Pamplona"  required><br><br></li>
-					<li><label ><b>Provincia: </b></label>
+		    		<input type="text"  placeholder="Ej: Pamplona" id="localidad" required><br><br></li>
+					<li><label for="provincia" ><b>Provincia: </b></label>
 		    		
 
-		    		<select>
+		    		<select id="provincia">
 		    			<option value= "...">...</option>
 		    			<option value="Navarra">Navarra</option>
 		    			<option value="Navarra">Navarra</option>
 		    			<option value="Navarra">Navarra</option>
 		    		</select></li>
-		    		<li><label ><b>Pais </b></label>
-		    		<input type="text"  placeholder="Ej: España"  required><br></li>
-		    		<li><label ><b>Color de portada: </b></label>
-			    	<input class="colordeporta" type="color" style="padding: 0">
-			    	<li><label>Número de copias: </label>
-			      	<input type="number" min="1" value="1" required><br><br></li>
-			      <li><label>Resolución de las fotos (dpi): </label>
-			      	<input type="number" min="150" max="900" value="150" step="150"> <br><br></li>
+		    		<li><label for="pais"><b>Pais </b></label>
+		    		<input type="text"  placeholder="Ej: España"  id="pais" required><br></li>
+		    		<li><label for="color-portada" ><b>Color de portada: </b></label>
+			    	<input class="colordeporta" type="color" style="padding: 0" id="color-portada">
+			    	<li><label for="numero-copias">Número de copias: </label>
+			      	<input type="number" min="1" value="1"  id="numero-copias" required><br><br></li>
+			      <li><label for="resolucion">Resolución de las fotos (dpi): </label>
+			      	<input type="number" min="150" max="900" value="150" step="150" id="resolucion"> <br><br></li>
 
  					<!--<label ><b>Álbum elegido: </b></label>
 		    		<input type="text"  placeholder="Introduce un álbum"  required><br>-->
 
 
-		    		<li><label ><b>Álbum elegido: </b></label>
+		    		<li><label for="album-elegido"><b>Álbum elegido: </b></label>
 		    	
-		    		<select>
+		    		<select id="album-elegido">
 		    			<option value= "...">...</option>
 		    			<option value="Album1">Album 1</option>
 		    			<option value="Album2">Album 2</option>
